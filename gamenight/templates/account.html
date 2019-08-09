@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <div class="media">
+        <img class="rounded-circle account-img" src="">
+        <div class="media-body">
+            <h2 class="account-heading">Register</h2>
+            <p class="text-secondary">Register to play</p>
+        </div>
+    </div>
+    <form method="POST" action="" enctype="multipart/form-data">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name" id="name" />
+        <hr />
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" id="password" />
+        <hr />
+        <label for="email">E-mail</label>
+        <br>
+        <input type="email" name="email" id="email" />
+        <hr />
+        <label for="image_file">Avatar</label>
+        <br>
+        <input type="file" name="image_file" id="image_file" />
+        <hr />
+        <input type="submit" value="register">
+
+    </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <div class="media">
+        <img class="rounded-circle account-img" src="">
+        <div class="media-body">
+            <h2 class="account-heading">Add Game</h2>
+            <p class="text-secondary">My new game</p>
+        </div>
+    </div>
+    <form method="POST" action="" enctype="multipart/form-data">
+        <label for="title">Title</label>
+        <br>
+        <input type="text" name="title" id="title" />
+        <hr />
+        <label for="description">Description</label>
+        <br>
+        <textarea name="description" id="description"></textarea>
+        <hr />
+        <label for="max_payers">Max-Players</label>
+        <br>
+        <input type="number" name="max_players" id="max_players" />
+        <hr />
+        <label for="time">Time</label>
+        <br>
+        <input type="number" name="time" id="time" />
+        <hr />
+        <label for="image_file">Cover</label>
+        <br>
+        <input type="file" name="image_file" id="image_file" />
+        <hr />
+        <input type="submit" value="register">
+
+    </form>
+</div>
+{% endblock content %}

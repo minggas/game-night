@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for player in players %}
+<article class="media content-section">
+  <img class="rounded-circle article-img" src="">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a href="/games/{{ player.id }}">
+        <h1 class="mr-2">{{ player.name }}</h1>
+      </a>
+      <h2 class="text-muted">{{ player.email }}</h2>
+    </div>
+  </div>
+</article>
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 class="mb-3">Games by {{ player.name }} - {{ total }}</h1>
+{% for game in games %}
+<article class="media content-section">
+  <img class="rounded-circle article-img" src="">
+  <div class="media-body">
+    <div class="article-metadata">
+      <small class="text-muted">{{ game.time }} mins</small>
+      <small class="text-muted">Players: 2 - {{ game.max_players }}</small>
+    </div>
+    <h2>{{ game.title }}</h2>
+    <p class="article-content">{{ game.description }}</p>
+  </div>
+</article>
+{% endfor %}
+
+{% endblock content %}
