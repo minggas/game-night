@@ -74,6 +74,10 @@ then install the depedencies:
 pip install -r requirements.txt
 ```
 
+edit the config.py:
+* Add a SECRET_KEY
+* Add your DB URI
+
 And run:
 
 ```
